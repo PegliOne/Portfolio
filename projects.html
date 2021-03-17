@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Pamela Glickman Portfolio</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -23,22 +25,35 @@
         </ul>
       </nav>
     </header>
-    <main>
-
-        <div>
-          <h2>Projects</h2>
+    <h2 class="main-heading">Projects</h2>
+    <main class="projects">
+      <div class="grid">
+        <div class="flex-container">
           <!-- This page will eventually include snapshots of the projects -->
-          <p><strong>Tic-Tac-Toe: </strong><a href="peglione.github.io/Project-0-Tic-Tac-Toe-Game/public/">peglione.github.io/Project-0-Tic-Tac-Toe-Game/public/</a></p>
-          <p><strong>Flight Planner: </strong><a href="https://flight-planner-app.herokuapp.com/">flight-planner-app.herokuapp.com/</a></p>
-          <p><strong>Drum Machine: </strong><a href="https://plt-drum-9.herokuapp.com ">plt-drum-9.herokuapp.com </a></p>
-          <p><strong>Economy Planner: </strong><a href="https://economy-planner.herokuapp.com/">economy-planner.herokuapp.com/</a></p>
+            <section>
+              <h3>Tic-Tac-Toe</h3>
+              <img src="Images/tic-tac-toe.png" class="tic-tac-toe">
+              <p>A Tic-Toe-Tac game made using HTML, CSS, JavaScript, jQuery and the Firebase Realtime Database. The game includes multiplayer networking, enabling users to play over the internet. <a href="peglione.github.io/Project-0-Tic-Tac-Toe-Game/public/">Click Here To Try It Out</a></p>
+            </section>
+            <section>
+              <h3>Flight Planner</h3>
+              <img src="Images/flight-planner.png" class="planner">
+              <p>A flight booking website that enables users to search for, book and cancel flights. Admins can also create, edit and delete flights. Made using HTML, CSS, Bootstrap, Ruby on Rails and PostgreSQL. <a href="https://flight-planner-app.herokuapp.com/">Click Here To Try It Out</a></p>
+            </section>
         </div>
-
-        <div>
-          <img src="Images/flight-planner.png" alt="My Flight Planner App">
+        <div class="flex-container">
+            <section>
+              <h3>Drum Machine</h3>
+              <img src="Images/drum-machine.png">
+              <p>A drum machine enabling users to click on buttons or press their corresponding keyboard keys to play sounds. Made using React.js. Pad and key data is supplied via requests to a Ruby on Rails server. <a href="https://plt-drum-9.herokuapp.com/">Click Here To Try It Out</a></p>
+            </section>
+            <section>
+              <h3>Commercial Planner</h3>
+              <img src="Images/flight-planner.png" class="planner"> <!-- TODO: Replace placeholder image src -->
+              <p>A  website that enables e-commerce businesses to both receive online orders and organise their employee's shifts to meet customer demand. Made using HTML, CSS, Ruby on Rails and PostgreSQL. <a href="https://flight-planner-app.herokuapp.com/">Click Here To Try It Out</a></p> <!-- TODO: Replace placeholder href -->
+            </section>
         </div>
-
-
+      </div>
     </main>
 
     <footer>
