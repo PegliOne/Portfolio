@@ -1,5 +1,5 @@
 body {
-  color: darkblue;
+  color: #0b3173;
   margin: 0;
   font-size: 1.5rem;
   font-family: 'Cormorant Garamond'; }
@@ -7,13 +7,15 @@ body {
 h1 {
   margin: 0;
   display: inline-block;
-  color: white;
-  width: 60%;
+  color: #eaebed;
+  width: 46%;
   padding-left: 40px;
-  font-size: 2.4rem; }
+  padding-bottom: 12px;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px black; }
 
 nav {
-  background-color: darkgreen;
+  background-color: #014421;
   height: 80px;
   display: flex;
   align-items: center;
@@ -23,16 +25,30 @@ nav {
   nav ul {
     margin: 0;
     display: inline-block;
-    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style-type: none;
     text-align: right;
-    width: 75%; }
+    width: 100%;
+    height: 100%; }
     nav ul li {
-      display: inline-block;
-      padding: 0 10px; }
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-align: center; }
       nav ul li a {
-        color: white;
-        text-decoration: none; }
+        color: #eaebed;
+        font-weight: 800;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px black;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 25px 30px; }
+    nav ul li:hover {
+      background-color: #38b649; }
 
 main {
   width: 90%;
@@ -95,16 +111,17 @@ h3 {
 
 img {
   width: 90%;
-  border: 10px solid darkblue; }
+  border: 10px solid #0b3173; }
 
 footer {
-  background-color: darkgreen;
+  background-color: #014421;
   width: 100%;
   color: white;
   text-align: center;
   padding: 10px;
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  text-shadow: 1px 1px 2px black; }
 
 @media (max-width: 1170px) {
   div.info {
@@ -118,6 +135,14 @@ footer {
   div.flex-container img {
     width: 90%; } }
 @media (max-width: 1100px) {
+  h1 {
+    font-size: 1.5rem;
+    width: 50%; }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 25px 0; }
+
   div.info {
     font-size: 1.3rem; }
     div.info h2 {
@@ -139,13 +164,26 @@ footer {
         width: 100%; } }
 @media (max-width: 690px) {
   nav {
-    flex-direction: column;
+    display: block;
     height: 200px;
-    justify-content: flex-start; }
+    align-items: center;
+    padding: 0; }
     nav ul {
-      width: 100%; }
-      nav ul li {
-        width: 93%;
+      padding: 0;
+      display: block;
+      height: 40px; }
+    nav li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-left: 40px;
+      padding-top: 10px;
+      text-align: justify;
+      font-size: 2rem; }
+      nav li a {
+        height: 40px;
+        width: 95%;
         text-align: justify;
         font-size: 2rem; }
 
