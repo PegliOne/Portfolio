@@ -95,7 +95,7 @@ h2 {
 h2.main-heading {
   width: 100%;
   text-align: center;
-  padding-top: 100px; }
+  padding-top: 120px; }
 
 section {
   display: flex;
@@ -112,6 +112,10 @@ h3 {
 img {
   width: 90%;
   border: 10px solid #0b3173; }
+
+a {
+  text-decoration: none;
+  color: #014421; }
 
 footer {
   background-color: #014421;
