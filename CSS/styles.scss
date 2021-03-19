@@ -11,17 +11,23 @@ $hover-background: #38b649;
 body {
   color: $primary-font-color;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 18px;
   font-family: 'Cormorant Garamond';
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    body {
+      font-size: 22px;
+    }
 }
 
 h1 {
   @include position();
   color: $secondary-font-color;
-  width: 46%;
+  width: 60%;
   padding-left: 40px;
   padding-bottom: 12px;
-  font-size: 2.5rem;
+  font-size: 2em;
   text-shadow: 1px 1px 2px black;
 }
 
@@ -101,7 +107,7 @@ div.flex-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 0.9em;
 
   img {
     margin: 0 10%;
@@ -120,7 +126,7 @@ div.flex-container {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5em;
   margin: 0;
 }
 
@@ -143,7 +149,7 @@ section {
 
 h3 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2em;
 }
 
 img {
@@ -168,11 +174,21 @@ footer {
 }
 
 @media (max-width: 1170px) {
+  h1 {
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+    padding: 25px 0;
+  }
+
   div.info {
-    font-size: 1.4rem;
+    font-size: 0.9em;
 
     h2 {
-      font-size: 2.7rem;
+      font-size: 2.2em;
     }
   }
 
@@ -187,36 +203,40 @@ footer {
 
 @media (max-width: 1100px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4em;
     width: 50%;
   }
 
   nav ul li a {
-    font-size: 1.2rem;
+    font-size: 0.9em;
     padding: 25px 0;
   }
 
   div.info {
-    font-size: 1.3rem;
+    font-size: 0.7em;
 
     h2 {
-      font-size: 2.4rem;
+      font-size: 1.7em;
     }
   }
 }
 
 @media (max-width: 860px) {
+  h1 {
+    font-size: 1.1em;
+  }
+
   main {
     flex-direction: column;
     align-items: center;
 
     h2 {
-      font-size: 2.1rem;
+      font-size: 1.3em;
     }
 
     div {
       width: 80%;
-      font-size: 1.5rem;
+      font-size: 0.9em;
     }
 
     div.info {
@@ -255,19 +275,18 @@ footer {
         padding-left: 40px;
         padding-top: 10px;
         text-align: justify;
-        font-size: 2rem;
 
         a {
           height: 40px;
           width: 95%;
           text-align: justify;
-          font-size: 2rem;
+          font-size: 1.2em;
         }
       }
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 1.5em;
     text-align: justify;
     width: 95%;
   }
@@ -285,6 +304,6 @@ footer {
 
 @media (max-width: 486px) {
   footer p {
-    font-size: 1rem;
+    font-size: 0.8em;
   }
 }
