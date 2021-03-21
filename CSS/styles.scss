@@ -11,7 +11,7 @@ $hover-background: #38b649;
 body {
   color: $primary-font-color;
   margin: 0;
-  font-size: 18px;
+  font-size: 10px;
   font-family: 'Cormorant Garamond';
 }
 
@@ -121,7 +121,7 @@ div.flex-container {
   }
 
   img.planner {
-    border: 2px solid grey;
+    border: 1px solid grey;
   }
 }
 
@@ -139,11 +139,21 @@ h2.main-heading {
 section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 
   p {
     width: 90%;
-    margin: 5% auto;
+    margin: 25px 0 20px 10%;
+  }
+
+  p.link {
+    text-align: center;
+    margin: 5px 0 5px 10%;
+  }
+
+  p.planner {
+    margin: 20px 0 25px 10%;
   }
 }
 

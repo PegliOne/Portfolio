@@ -1,7 +1,7 @@
 body {
   color: #0b3173;
   margin: 0;
-  font-size: 18px;
+  font-size: 10px;
   font-family: 'Cormorant Garamond'; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -89,7 +89,7 @@ div.flex-container {
     border-top: 10px solid #e63946;
     border-bottom: 10px solid #e63946; }
   div.flex-container img.planner {
-    border: 2px solid grey; }
+    border: 1px solid grey; }
 
 h2 {
   font-size: 2.5em;
@@ -103,10 +103,16 @@ h2.main-heading {
 section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
   section p {
     width: 90%;
-    margin: 5% auto; }
+    margin: 25px 0 20px 10%; }
+  section p.link {
+    text-align: center;
+    margin: 5px 0 5px 10%; }
+  section p.planner {
+    margin: 20px 0 25px 10%; }
 
 h3 {
   text-align: center;
