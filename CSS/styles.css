@@ -142,8 +142,7 @@ footer {
 @media only screen and (max-width: 1170px) {
   h1 {
     font-size: 1.5em;
-    width: 50%;
-    color: purple; }
+    width: 50%; }
 
   nav ul li a {
     font-size: 1em;
@@ -162,8 +161,7 @@ footer {
 @media only screen and (max-width: 1100px) {
   h1 {
     font-size: 1.4em;
-    width: 50%;
-    color: yellow; }
+    width: 50%; }
 
   nav ul li a {
     font-size: 0.9em;
@@ -175,8 +173,7 @@ footer {
       font-size: 1.7em; } }
 @media only screen and (max-width: 860px) {
   h1 {
-    font-size: 1.1em;
-    color: orange; }
+    font-size: 1.1em; }
 
   main {
     flex-direction: column;
