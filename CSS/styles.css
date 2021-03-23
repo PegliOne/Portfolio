@@ -1,7 +1,6 @@
 body {
   color: #0b3173;
   margin: 0;
-  font-size: 10px;
   font-family: 'Cormorant Garamond'; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -57,6 +56,7 @@ nav {
         cursor: default; }
 
 main {
+  font-size: 20px;
   width: 90%;
   margin: 150px auto;
   display: flex;
@@ -211,10 +211,10 @@ footer {
         height: 40px;
         width: 95%;
         text-align: justify;
-        font-size: 1.2em; }
+        font-size: 1.5em; }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-align: justify;
     width: 95%;
     color: purple; }
@@ -225,14 +225,14 @@ footer {
   main {
     width: 90%;
     margin: 220px auto;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     flex-direction: column;
     align-items: center; }
-    main div {
+    main div.info {
       width: 100%;
-      font-size: 1em; } }
+      font-size: 0.9em; } }
 @media only screen and (max-width: 486px) {
   footer p {
-    font-size: 0.8em; } }
+    font-size: 0.7em; } }
 
 /*# sourceMappingURL=styles.css.map */

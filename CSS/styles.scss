@@ -11,7 +11,6 @@ $hover-background: #38b649;
 body {
   color: $primary-font-color;
   margin: 0;
-  font-size: 10px;
   font-family: 'Cormorant Garamond';
 }
 
@@ -84,6 +83,7 @@ nav {
 }
 
 main {
+  font-size: 20px;
   width: 90%;
   margin: 150px auto;
   display: flex;
@@ -303,7 +303,7 @@ footer {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     text-align: justify;
     width: 95%;
     color: purple;
@@ -320,9 +320,9 @@ footer {
     flex-direction: column;
     align-items: center;
 
-    div {
+    div.info {
       width: 100%;
-      font-size: 1.2em;
+      font-size: 0.9em;
     }
   }
 
@@ -331,6 +331,6 @@ footer {
 @media only screen and (max-width: 486px) {
 
   footer p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 }
