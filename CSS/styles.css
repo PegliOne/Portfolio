@@ -190,9 +190,6 @@ footer {
       main div.flex-container section {
         width: 100%; } }
 @media only screen and (max-width: 690px), (max-device-width: 480px) {
-  h1 {
-    color: red; }
-
   nav {
     display: block;
     height: 200px;
@@ -219,18 +216,21 @@ footer {
   h1 {
     font-size: 1.5em;
     text-align: justify;
-    width: 95%; }
+    width: 95%;
+    color: purple; }
 
   h2.main-heading {
     padding-top: 220px; }
 
   main {
-    width: 100%;
+    width: 90%;
     margin: 220px auto;
+    padding: 0 20px;
     flex-direction: column;
     align-items: center; }
     main div {
-      width: 100%; } }
+      width: 100%;
+      font-size: 1em; } }
 @media only screen and (max-width: 486px) {
   footer p {
     font-size: 0.8em; } }

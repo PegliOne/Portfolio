@@ -271,9 +271,6 @@ footer {
 }
 
 @media only screen and (max-width: 690px), (max-device-width: 480px) {
-  h1 {
-    color: red;
-  }
 
   nav {
     display: block;
@@ -309,6 +306,7 @@ footer {
     font-size: 1.5em;
     text-align: justify;
     width: 95%;
+    color: purple;
   }
 
   h2.main-heading {
@@ -316,13 +314,15 @@ footer {
   }
 
   main {
-    width: 100%;
+    width: 90%;
     margin: 220px auto;
+    padding: 0 20px;
     flex-direction: column;
     align-items: center;
 
     div {
       width: 100%;
+      font-size: 1em;
     }
   }
 
