@@ -13,7 +13,7 @@ h1 {
   width: 60%;
   padding-left: 40px;
   padding-bottom: 12px;
-  font-size: 2em;
+  font-size: 1.8em;
   text-shadow: 1px 1px 2px black; }
 
 nav {
@@ -47,7 +47,8 @@ nav {
         text-shadow: 1px 1px 2px black;
         width: 100%;
         margin: 0;
-        padding: 25px 30px; }
+        padding: 22px 15px;
+        font-size: 1.2em; }
     nav ul li:hover {
       background-color: #38b649; }
     nav ul li.selected {
@@ -107,7 +108,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.4; }
   section p {
     width: 90%;
     margin: 25px 0 20px 10%; }
@@ -141,7 +143,7 @@ footer {
 
 @media only screen and (max-width: 1170px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     width: 50%; }
 
   nav ul li a {
@@ -149,7 +151,7 @@ footer {
     padding: 25px 0; }
 
   div.info {
-    font-size: 0.9em; }
+    font-size: 1.2em; }
     div.info h2 {
       font-size: 2.2em; }
 
@@ -160,20 +162,20 @@ footer {
     width: 90%; } }
 @media only screen and (max-width: 1100px) {
   h1 {
-    font-size: 1.4em;
+    font-size: 1.1em;
     width: 50%; }
 
   nav ul li a {
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 25px 0; }
 
   div.info {
-    font-size: 0.7em; }
+    font-size: 1.2em; }
     div.info h2 {
       font-size: 1.7em; } }
 @media only screen and (max-width: 860px) {
   h1 {
-    font-size: 1.1em; }
+    font-size: 1em; }
 
   main {
     flex-direction: column;
@@ -211,7 +213,7 @@ footer {
         height: 40px;
         width: 95%;
         text-align: justify;
-        font-size: 1.5em; }
+        font-size: 1.4em; }
 
   h1 {
     font-size: 1.6em;
