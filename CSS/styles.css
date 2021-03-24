@@ -213,13 +213,13 @@ footer {
         height: 40px;
         width: 95%;
         text-align: justify;
-        font-size: 1.4em; }
+        font-size: 20px; }
 
   h1 {
     font-size: 1.6em;
     text-align: justify;
     width: 95%;
-    color: red; }
+    color: pink; }
 
   h2.main-heading {
     padding-top: 220px; }
@@ -232,7 +232,7 @@ footer {
     align-items: center; }
     main div.info {
       width: 100%;
-      font-size: 0.9em; } }
+      font-size: 30px; } }
 @media only screen and (max-width: 486px) {
   footer p {
     font-size: 0.7em; } }
