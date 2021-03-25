@@ -196,7 +196,8 @@ footer {
     display: block;
     height: 200px;
     align-items: center;
-    padding: 0; }
+    padding: 0;
+    padding-bottom: 20px; }
     nav ul {
       padding: 0;
       display: block;
@@ -212,17 +213,22 @@ footer {
       nav li a {
         height: 40px;
         width: 95%;
-        text-align: justify;
-        font-size: 20px; }
+        text-align: justify; }
+
+  header nav ul li a {
+    font-size: 30px; }
 
   h1 {
-    font-size: 1.6em;
+    font-size: 50px;
     text-align: justify;
     width: 95%;
-    color: pink; }
+    color: lightgreen; }
+
+  h2 {
+    padding-top: 40px; }
 
   h2.main-heading {
-    padding-top: 220px; }
+    padding-top: 250px; }
 
   main {
     width: 90%;
@@ -232,7 +238,12 @@ footer {
     align-items: center; }
     main div.info {
       width: 100%;
-      font-size: 30px; } }
+      font-size: 20px; }
+    main section {
+      font-size: 25px; }
+
+  body img {
+    margin-top: 60px; } }
 @media only screen and (max-width: 486px) {
   footer p {
     font-size: 0.7em; } }
