@@ -8,16 +8,23 @@ $hover-background: #38b649;
   display: inline-block;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@-moz-document url-prefix() {
+  html {
+     color: lime;
+     font-size: 18px;
+  }
+}
+
 body {
   color: $primary-font-color;
   margin: 0;
   font-family: 'Cormorant Garamond';
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    body {
-      font-size: 22px;
-    }
 }
 
 h1 {
@@ -26,7 +33,7 @@ h1 {
   width: 60%;
   padding-left: 40px;
   padding-bottom: 12px;
-  font-size: 1.8em;
+  font-size: 2rem;
   text-shadow: 1px 1px 2px black;
 }
 
@@ -64,7 +71,7 @@ nav {
         width: 100%;
         margin: 0;
         padding: 22px 15px;
-        font-size: 1.2em;
+        font-size: 1.2rem;
       }
 
     }
@@ -108,6 +115,7 @@ div {
 }
 
 div.info {
+  font-size: 1.1rem;
   margin: 0 8% 0 0;
 }
 
@@ -115,7 +123,7 @@ div.flex-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 0.9em;
+  font-size: 1rem;
 
   img {
     margin: 0 10%;
@@ -134,7 +142,7 @@ div.flex-container {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -194,7 +202,7 @@ footer {
 
 @media only screen and (max-width: 1170px) {
   h1 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     width: 50%;
   }
 
@@ -204,7 +212,7 @@ footer {
   }
 
   div.info {
-    font-size: 1.2em;
+    font-size: 1rem;
 
     h2 {
       font-size: 2.2em;
@@ -222,17 +230,17 @@ footer {
 
 @media only screen and (max-width: 1100px) {
   h1 {
-    font-size: 1.1em;
+    font-size: 1.3rem;
     width: 50%;
   }
 
   nav ul li a {
-    font-size: 0.8em;
+    font-size: 1em;
     padding: 25px 0;
   }
 
   div.info {
-    font-size: 1.2em;
+    font-size: 0.9rem;
 
     h2 {
       font-size: 1.7em;
@@ -241,9 +249,6 @@ footer {
 }
 
 @media only screen and (max-width: 860px) {
-  h1 {
-    font-size: 1em;
-  }
 
   main {
     flex-direction: column;
@@ -272,7 +277,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 690px), (max-device-width: 480px) {
+@media only screen and (max-width: 780px), (max-device-width: 480px) {
 
   nav {
     display: block;
@@ -309,10 +314,10 @@ footer {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 2.2rem;
     text-align: justify;
     width: 95%;
-    color: lightgreen;
+    color: darkgreen;
   }
 
   h2 {
