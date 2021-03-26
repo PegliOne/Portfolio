@@ -1,6 +1,6 @@
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   html {
-    font-size: 50px; } }
+    font-size: 20px; } }
 @-moz-document url-prefix() {
   html {
     color: lime;
@@ -223,8 +223,7 @@ footer {
   h1 {
     font-size: 2.2rem;
     text-align: justify;
-    width: 95%;
-    color: darkgreen; }
+    width: 95%; }
 
   h2 {
     padding-top: 40px; }
