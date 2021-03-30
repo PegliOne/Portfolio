@@ -2,6 +2,7 @@ $primary-font-color: #0b3173;
 $secondary-font-color: #eaebed;
 $background-color: #014421;
 $hover-background: #38b649;
+$hover-link: #32cd32;
 
 @mixin position() {
   margin: 0;
@@ -16,7 +17,6 @@ $hover-background: #38b649;
 
 @-moz-document url-prefix() {
   html {
-     color: lime;
      font-size: 18px;
   }
 }
@@ -106,6 +106,7 @@ main.projects {
 
 div.grid {
   width: 100%;
+  margin: 0;
 }
 
 div {
@@ -175,6 +176,8 @@ section {
 }
 
 h3 {
+  margin-left: 10%;
+  width: 90%;
   text-align: center;
   font-size: 2em;
 }
@@ -189,8 +192,13 @@ a {
   color: $background-color;
 }
 
+main a:hover {
+  color: $hover-link;
+}
+
 footer {
   background-color: $background-color;
+  font-size: 1.2rem;
   width: 100%;
   color: white;
   text-align: center;
@@ -284,7 +292,7 @@ footer {
     height: 200px;
     align-items: center;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 28px;
 
     ul {
       padding: 0;
@@ -299,10 +307,11 @@ footer {
         width: 100%;
         padding-left: 40px;
         padding-top: 10px;
+        padding-bottom: 5px;
         text-align: justify;
 
         a {
-          height: 40px;
+          height: 45px;
           width: 95%;
           text-align: justify;
         }
@@ -317,7 +326,6 @@ footer {
     font-size: 2.2rem;
     text-align: justify;
     width: 95%;
-    color: red;
   }
 
   h2 {
@@ -345,14 +353,12 @@ footer {
     }
   }
 
-  body img {
-    margin-top: 60px;
+  main div {
+    margin-top: 30px;
+    width: 100%;
   }
-}
-
-@media only screen and (max-width: 486px) {
 
   footer p {
-    font-size: 0.7em;
+    font-size: 1.1rem;
   }
 }

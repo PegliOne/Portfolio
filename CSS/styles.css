@@ -3,7 +3,6 @@
     font-size: 20px; } }
 @-moz-document url-prefix() {
   html {
-    color: lime;
     font-size: 18px; } }
 body {
   color: #0b3173;
@@ -73,7 +72,8 @@ main.projects {
   margin-bottom: 150px; }
 
 div.grid {
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
 
 div {
   margin: 0;
@@ -125,6 +125,8 @@ section {
     margin: 20px 0 25px 10%; }
 
 h3 {
+  margin-left: 10%;
+  width: 90%;
   text-align: center;
   font-size: 2em; }
 
@@ -136,8 +138,12 @@ a {
   text-decoration: none;
   color: #014421; }
 
+main a:hover {
+  color: #32cd32; }
+
 footer {
   background-color: #014421;
+  font-size: 1.2rem;
   width: 100%;
   color: white;
   text-align: center;
@@ -199,7 +205,7 @@ footer {
     height: 200px;
     align-items: center;
     padding: 0;
-    padding-bottom: 20px; }
+    padding-bottom: 28px; }
     nav ul {
       padding: 0;
       display: block;
@@ -211,9 +217,10 @@ footer {
       width: 100%;
       padding-left: 40px;
       padding-top: 10px;
+      padding-bottom: 5px;
       text-align: justify; }
       nav li a {
-        height: 40px;
+        height: 45px;
         width: 95%;
         text-align: justify; }
 
@@ -223,8 +230,7 @@ footer {
   h1 {
     font-size: 2.2rem;
     text-align: justify;
-    width: 95%;
-    color: red; }
+    width: 95%; }
 
   h2 {
     padding-top: 40px; }
@@ -244,10 +250,11 @@ footer {
     main section {
       font-size: 25px; }
 
-  body img {
-    margin-top: 60px; } }
-@media only screen and (max-width: 486px) {
+  main div {
+    margin-top: 30px;
+    width: 100%; }
+
   footer p {
-    font-size: 0.7em; } }
+    font-size: 1.1rem; } }
 
 /*# sourceMappingURL=styles.css.map */
