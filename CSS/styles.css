@@ -202,8 +202,8 @@ footer {
 @media only screen and (max-width: 780px), (max-device-width: 480px) {
   nav {
     display: block;
-    height: 180px;
     align-items: center;
+    height: 178px;
     padding: 0;
     padding-bottom: 28px; }
     nav ul {
@@ -225,10 +225,10 @@ footer {
         text-align: justify; }
 
   header nav ul li a {
-    font-size: 1.3rem; }
+    font-size: 1.1rem; }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: justify;
     width: 95%; }
 
@@ -256,7 +256,7 @@ footer {
       width: 100%;
       padding-left: 0; }
       main section h3 {
-        font-size: 1.5rem; }
+        font-size: 1.3rem; }
 
   footer p {
     font-size: 0.8rem; } }
