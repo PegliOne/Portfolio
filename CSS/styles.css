@@ -202,7 +202,7 @@ footer {
 @media only screen and (max-width: 780px), (max-device-width: 480px) {
   nav {
     display: block;
-    height: 200px;
+    height: 180px;
     align-items: center;
     padding: 0;
     padding-bottom: 28px; }
@@ -225,10 +225,10 @@ footer {
         text-align: justify; }
 
   header nav ul li a {
-    font-size: 30px; }
+    font-size: 1.3rem; }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     text-align: justify;
     width: 95%; }
 
@@ -249,16 +249,16 @@ footer {
       width: 100%; }
     main div.info {
       width: 100%;
-      font-size: 20px; }
+      font-size: 1rem; }
     main div.flex-container {
       flex-direction: column; }
     main section {
       width: 100%;
       padding-left: 0; }
       main section h3 {
-        font-size: 2rem; }
+        font-size: 1.5rem; }
 
   footer p {
-    font-size: 1.1rem; } }
+    font-size: 0.8rem; } }
 
 /*# sourceMappingURL=styles.css.map */
