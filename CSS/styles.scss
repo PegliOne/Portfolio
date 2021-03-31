@@ -355,12 +355,15 @@ footer {
 
     div.flex-container {
       flex-direction: column;
-      color: purple;
     }
 
     section {
       width: 100%;
       padding-left: 0;
+
+      h3 {
+        font-size: 2rem;
+      }
     }
   }
 
