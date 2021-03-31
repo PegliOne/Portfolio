@@ -343,9 +343,18 @@ footer {
     flex-direction: column;
     align-items: center;
 
+    div {
+      margin-top: 30px;
+      width: 100%;
+    }
+
     div.info {
       width: 100%;
       font-size: 20px;
+    }
+
+    div.flex-container {
+      flex-direction: column;
     }
 
     section {
@@ -353,11 +362,6 @@ footer {
       color: red;
       padding-left: 0;
     }
-  }
-
-  main div {
-    margin-top: 30px;
-    width: 100%;
   }
 
   footer p {
