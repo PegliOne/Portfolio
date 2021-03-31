@@ -251,10 +251,10 @@ footer {
       width: 100%;
       font-size: 20px; }
     main div.flex-container {
-      flex-direction: column; }
+      flex-direction: column;
+      color: purple; }
     main section {
       width: 100%;
-      color: red;
       padding-left: 0; }
 
   footer p {
