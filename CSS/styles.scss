@@ -33,6 +33,7 @@ h1 {
   width: 60%;
   padding-left: 40px;
   padding-bottom: 12px;
+  padding-top: 5px;
   font-size: 2rem;
   text-shadow: 1px 1px 2px black;
 }
@@ -59,9 +60,11 @@ nav {
     li {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100%;
       text-align: center;
+      transition: background-color 0.5s;
 
       a {
         color: $secondary-font-color;
@@ -93,10 +96,11 @@ nav {
 main {
   font-size: 20px;
   width: 90%;
-  margin: 150px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 3%;
 }
 
 main.projects {
@@ -106,7 +110,7 @@ main.projects {
 
 div.grid {
   width: 100%;
-  margin: 0;
+  margin-left: 0;
 }
 
 div {
@@ -117,7 +121,7 @@ div {
 
 div.info {
   font-size: 1.1rem;
-  margin: 0 8% 0 0;
+  margin: 5%;
 }
 
 div.flex-container {
@@ -190,6 +194,7 @@ img {
 a {
   text-decoration: none;
   color: $background-color;
+  transition: color 0.5s;
 }
 
 main a:hover {
@@ -261,6 +266,7 @@ footer {
   main {
     flex-direction: column;
     align-items: center;
+    margin-left: 1%;
 
     h2 {
       font-size: 1.3em;
@@ -292,7 +298,7 @@ footer {
     align-items: center;
     height: 178px;
     padding: 0;
-    padding-bottom: 28px;
+    padding-bottom: 34px;
 
     ul {
       padding: 0;
@@ -320,6 +326,7 @@ footer {
 
   header nav ul li a {
     font-size: 1.1rem;
+    padding-top: 40px;
   }
 
   h1 {
@@ -342,6 +349,7 @@ footer {
     padding: 10px;
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
 
     div {
       margin-top: 30px;
