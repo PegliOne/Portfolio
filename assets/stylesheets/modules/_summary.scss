@@ -1,17 +1,8 @@
 @use "../partials/pallette";
+@use "../partials/mixins";
 
 .summary {
-  display: flex;
-  justify-content: center;
-  padding: 80px 24px 160px;
-
-  @media only screen and (max-width: 992px) {
-    padding-bottom: 240px;
-  }
-
-  @media only screen and (max-width: 768px) {
-    padding: 180px 24px 240px;
-  }
+  @include mixins.main-styles;
 
   .summary__section {
     display: flex;
@@ -25,22 +16,7 @@
     }
 
     .summary__para {
-      text-align: justify;
-
-      &.--link-container {
-        margin: 12px 0;
-        text-align: center;
-      }
-    }
-
-    .summary__link {
-      text-decoration: none;
-      color: pallette.$primary-color;
-      transition: color 0.5s;
-
-      &:hover {
-        color: pallette.$hover-color;
-      }
+      @include mixins.para-styles;
     }
   }
 
