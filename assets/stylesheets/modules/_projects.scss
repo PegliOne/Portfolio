@@ -1,0 +1,62 @@
+@use "../partials/mixins";
+
+.projects {
+  @include mixins.main-styles;
+  flex-direction: column;
+
+  .projects__heading {
+    margin: 0 0 24px;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .projects__gallery {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+
+    @media only screen and (max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projects__project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px 60px;
+
+      @media only screen and (max-width: 768px) {
+        padding: 0;
+      }
+
+      .project__heading {
+        margin: 0 0 24px;
+        font-size: 2rem;
+      }
+
+      .project__image-container {
+        display: flex;
+        justify-content: center;
+
+        .project__image {
+          height: 300px;
+          margin: 0;
+          border: none;
+
+          @media only screen and (max-width: 1200px) {
+            height: 240px;
+          }
+
+          @media only screen and (max-width: 992px) {
+            width: 100%;
+            height: unset;
+          }
+        }
+      }
+
+      .project__para {
+        @include mixins.para-styles;
+      }
+    }
+  }
+}
