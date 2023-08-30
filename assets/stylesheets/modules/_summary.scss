@@ -1,0 +1,60 @@
+@use "../partials/pallette";
+
+.summary {
+  display: flex;
+  justify-content: center;
+  padding: 80px 24px 160px;
+
+  @media only screen and (max-width: 992px) {
+    padding-bottom: 240px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 180px 24px 240px;
+  }
+
+  .summary__section {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+
+    .summary__heading {
+      margin: 0;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .summary__para {
+      text-align: justify;
+
+      &.--link-container {
+        margin: 12px 0;
+        text-align: center;
+      }
+    }
+
+    .summary__link {
+      text-decoration: none;
+      color: pallette.$primary-color;
+      transition: color 0.5s;
+
+      &:hover {
+        color: pallette.$hover-color;
+      }
+    }
+  }
+
+  .summary__image {
+    margin-left: 48px;
+    height: 400px;
+    border: 10px solid pallette.$secondary-color;
+
+    @media only screen and (max-width: 1200px) {
+      height: 300px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+}
