@@ -1,7 +1,8 @@
-@use "../partials/mixins";
+@use "../partials/breakpoints";
+@use "../partials/shared-styles";
 
 .projects {
-  @include mixins.main-styles;
+  @include shared-styles.main-styles;
   flex-direction: column;
 
   .projects__heading {
@@ -14,7 +15,7 @@
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
 
-    @media only screen and (max-width: 992px) {
+    @include breakpoints.tablet {
       display: flex;
       flex-direction: column;
     }
@@ -25,7 +26,7 @@
       align-items: center;
       padding: 12px 60px;
 
-      @media only screen and (max-width: 768px) {
+      @include breakpoints.phone {
         padding: 0;
       }
 
@@ -43,11 +44,11 @@
           margin: 0;
           border: none;
 
-          @media only screen and (max-width: 1200px) {
+          @include breakpoints.small-desktop {
             height: 240px;
           }
 
-          @media only screen and (max-width: 992px) {
+          @include breakpoints.tablet {
             width: 100%;
             height: unset;
           }
@@ -55,7 +56,7 @@
       }
 
       .project__para {
-        @include mixins.para-styles;
+        @include shared-styles.para-styles;
       }
     }
   }

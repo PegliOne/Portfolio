@@ -1,15 +1,16 @@
 @use "./pallette";
+@use "./breakpoints";
 
 @mixin main-styles {
   display: flex;
   justify-content: center;
   padding: 80px 24px 160px;
 
-  @media only screen and (max-width: 992px) {
+  @include breakpoints.tablet {
     padding-bottom: 240px;
   }
 
-  @media only screen and (max-width: 768px) {
+  @include breakpoints.phone {
     padding: 180px 24px 240px;
   }
 }
