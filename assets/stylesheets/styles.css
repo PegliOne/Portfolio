@@ -122,58 +122,6 @@
   }
 }
 
-.footer {
-  background-color: #014421;
-  width: 100%;
-  color: #eaebed;
-  text-align: center;
-  padding: 24px 0;
-  position: fixed;
-  bottom: 0;
-  text-shadow: 1px 1px 2px #000;
-}
-.footer .footer__heading {
-  margin: 0;
-  padding: 0 0 16px;
-  font-size: 1.2rem;
-}
-.footer .footer__details {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-@media only screen and (max-width: 992px) {
-  .footer .footer__details {
-    flex-direction: column;
-  }
-}
-.footer .footer__details .footer__detail {
-  font-size: 1rem;
-  margin: 0 20px;
-}
-@media only screen and (max-width: 992px) {
-  .footer .footer__details .footer__detail {
-    margin: 8px 0;
-  }
-}
-.footer .footer__details .footer__detail .footer__link {
-  color: #eaebed;
-}
-.footer .footer__details .footer__detail .footer__link:hover {
-  color: #38b649;
-}
-
-@-moz-document url-prefix() {
-  html {
-    font-size: 18px;
-  }
-}
-body {
-  color: #0b3173;
-  font-family: "Cormorant Garamond";
-  margin: 0;
-}
-
 .projects {
   display: flex;
   justify-content: center;
@@ -254,4 +202,56 @@ body {
 }
 .projects .projects__gallery .projects__project .project__para a:hover {
   color: #38b649;
+}
+
+.footer {
+  background-color: #014421;
+  width: 100%;
+  color: #eaebed;
+  text-align: center;
+  padding: 24px 0;
+  position: fixed;
+  bottom: 0;
+  text-shadow: 1px 1px 2px #000;
+}
+.footer .footer__heading {
+  margin: 0;
+  padding: 0 0 16px;
+  font-size: 1.2rem;
+}
+.footer .footer__details {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+@media only screen and (max-width: 992px) {
+  .footer .footer__details {
+    flex-direction: column;
+  }
+}
+.footer .footer__details .footer__detail {
+  font-size: 1rem;
+  margin: 0 20px;
+}
+@media only screen and (max-width: 992px) {
+  .footer .footer__details .footer__detail {
+    margin: 8px 0;
+  }
+}
+.footer .footer__details .footer__detail .footer__link {
+  color: #eaebed;
+}
+.footer .footer__details .footer__detail .footer__link:hover {
+  color: #38b649;
+}
+
+@-moz-document url-prefix() {
+  html {
+    font-size: 18px;
+  }
+}
+body {
+  color: #0b3173;
+  font-family: "Cormorant Garamond";
+  margin: 0;
 }
