@@ -1,0 +1,36 @@
+@use "../partials/pallette";
+@use "../partials/mixins";
+
+.summary {
+  @include mixins.main-styles;
+
+  .summary__section {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+
+    .summary__heading {
+      margin: 0;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .summary__para {
+      @include mixins.para-styles;
+    }
+  }
+
+  .summary__image {
+    margin-left: 48px;
+    height: 400px;
+    border: 10px solid pallette.$secondary-color;
+
+    @media only screen and (max-width: 1200px) {
+      height: 300px;
+    }
+
+    @media only screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+}

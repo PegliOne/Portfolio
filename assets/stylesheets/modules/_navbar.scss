@@ -1,0 +1,73 @@
+@use "../partials/pallette";
+
+.navbar {
+  background-color: pallette.$primary-color;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .navbar__heading {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    color: pallette.$tertiary-color;
+    height: 48px;
+    padding-left: 32px;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px black;
+
+    @media only screen and (max-width: 768px) {
+      padding: 12px 0;
+    }
+  }
+
+  .navbar__buttons {
+    display: flex;
+    list-style-type: none;
+    flex-grow: 1;
+    margin: 0;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+
+    .navbar__button {
+      flex-grow: 1;
+      transition: background-color 0.5s;
+
+      &--selected {
+        background-color: pallette.$secondary-color;
+
+        .navbar__link {
+          cursor: default;
+        }
+      }
+
+      &:not(.navbar__button--selected):hover {
+        background-color: pallette.$hover-color;
+      }
+
+      .navbar__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: pallette.$tertiary-color;
+        font-weight: 800;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px black;
+        height: 48px;
+        margin: 0;
+        font-size: 1rem;
+      }
+    }
+  }
+}

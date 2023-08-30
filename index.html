@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pamela Heystek Portfolio</title>
-    <link rel="stylesheet" href="./assets/stylesheets/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheets/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600:800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <header>
-      <nav>
-        <h1>Pamela Heystek</h1>
-        <ul>
-          <li class="selected">
-            <a href="./index.html">Home</a>
+      <nav class="navbar">
+        <h1 class="navbar__heading">Pamela Heystek</h1>
+        <ul class="navbar__buttons">
+          <li class="navbar__button navbar__button--selected">
+            <a class="navbar__link" href="./index.html">Home</a>
           </li>
-          <li>
-            <a href="./projects.html">Projects</a>
+          <li class="navbar__button">
+            <a class="navbar__link" href="./projects.html">Projects</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="info">
-        <h2>About Me</h2>
 
-        <p>I am a Software Engineer with two years of experience in full-stack web development. I graduated from General Assembly’s Software Engineering Immersive course in 2021 and have two years of experience working with HTML, CSS / SCSS, Tailwind, JavaScript, React.js, TypeScript.js Ruby on Rails and PostgreSQL.</p>
+    <main class="summary">
+      <section class="summary__section">
+        <h2 class="summary__heading">About Me</h2>
 
-        <p>I’m intelligent, humble, hard-working and eager to learn. I always strive to write neat, efficient, readable code. You can rely on me to spot coding errors from a mile away and not lose my cool when things go wrong, as they often do in the tech world, though my partner tells me I have a soft side too.</p>
-
-        <p class="resume">
-          <a href="./assets/images/Pamela_Heystek_Resume.pdf" target="_blank" download>Click Here to Download my Resume</a>
+        <p class="summary__para">
+          I am a Software Engineer with two years of experience in full-stack
+          web development. I graduated from General Assembly’s Software
+          Engineering Immersive course in 2021 and have two years of experience
+          working with HTML, CSS / SCSS, Tailwind, JavaScript, React.js,
+          TypeScript.js Ruby on Rails and PostgreSQL.
         </p>
-      </div>
 
-      <img src="./assets/images/coding.jpeg" alt="Binary digits" class="decorative">
+        <p class="summary__para">
+          I’m intelligent, humble, hard-working and eager to learn. I always
+          strive to write neat, efficient, readable code. You can rely on me to
+          spot coding errors from a mile away and not lose my cool when things
+          go wrong, as they often do in the tech world, though my partner tells
+          me I have a soft side too.
+        </p>
+
+        <p class="summary__para summary__para--link-container">
+          <a
+            class="summary__link"
+            href="./assets/images/Pamela_Heystek_Resume.pdf"
+            target="_blank"
+            download
+            >Click Here to Download my Resume</a
+          >
+        </p>
+      </section>
+
+      <img
+        class="summary__image"
+        src="./assets/images/coding.jpeg"
+        alt="Binary digits"
+      />
     </main>
 
-    <footer>
-      <h2>Contact Details</h2>
-      <p>
-        <span>
-          <strong>Email: </strong> <a href="mailto:pamela.e.glickman@gmail.com" target="_blank">pamela.e.glickman@gmail.com</a>
+    <footer class="footer">
+      <h2 class="footer__heading">Contact Details</h2>
+      <div class="footer__details">
+        <span class="footer__detail">
+          <strong>Email: </strong>
+          <a
+            class="footer__link"
+            href="mailto:pamela.e.glickman@gmail.com"
+            target="_blank"
+            >pamela.e.glickman@gmail.com</a
+          >
         </span>
-        <span>
-          <strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/pamela-e-glickman/" target="_blank">www.linkedin.com/in/pamela-e-glickman/</a>
+        <span class="footer__detail">
+          <strong>LinkedIn: </strong
+          ><a
+            class="footer__link"
+            href="https://www.linkedin.com/in/pamela-e-glickman/"
+            target="_blank"
+            >www.linkedin.com/in/pamela-e-glickman/</a
+          >
         </span>
-        <span>
-          <strong>GitHub: </strong> <a href="https://github.com/PegliOne" target="_blank">https://github.com/PegliOne</a>
+        <span class="footer__detail">
+          <strong>GitHub: </strong>
+          <a
+            class="footer__link"
+            href="https://github.com/PegliOne"
+            target="_blank"
+            >https://github.com/PegliOne</a
+          >
         </span>
-      </p>
+      </div>
     </footer>
-
-    <!-- TODOS: Make website look better on mobile. Specifically fix the large left margin, use CSS Grid for the projects grid (?) -->
   </body>
 </html>

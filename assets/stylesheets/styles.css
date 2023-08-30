@@ -1,20 +1,4 @@
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  html {
-    font-size: 20px;
-  }
-}
-@-moz-document url-prefix() {
-  html {
-    font-size: 18px;
-  }
-}
-body {
-  color: #0b3173;
-  margin: 0;
-  font-family: "Cormorant Garamond";
-}
-
-nav {
+.navbar {
   background-color: #014421;
   display: flex;
   align-items: center;
@@ -23,11 +7,11 @@ nav {
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  nav {
+  .navbar {
     flex-direction: column;
   }
 }
-nav h1 {
+.navbar .navbar__heading {
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -39,28 +23,37 @@ nav h1 {
   text-shadow: 1px 1px 2px black;
 }
 @media only screen and (max-width: 768px) {
-  nav h1 {
+  .navbar .navbar__heading {
     padding: 12px 0;
   }
 }
-nav ul {
+.navbar .navbar__buttons {
   display: flex;
   list-style-type: none;
   flex-grow: 1;
   margin: 0;
 }
 @media only screen and (max-width: 768px) {
-  nav ul {
+  .navbar .navbar__buttons {
     flex-direction: column;
     width: 100%;
     padding: 0;
   }
 }
-nav ul li {
+.navbar .navbar__buttons .navbar__button {
   flex-grow: 1;
   transition: background-color 0.5s;
 }
-nav ul li a {
+.navbar .navbar__buttons .navbar__button--selected {
+  background-color: #0b3173;
+}
+.navbar .navbar__buttons .navbar__button--selected .navbar__link {
+  cursor: default;
+}
+.navbar .navbar__buttons .navbar__button:not(.navbar__button--selected):hover {
+  background-color: #38b649;
+}
+.navbar .navbar__buttons .navbar__button .navbar__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,166 +65,193 @@ nav ul li a {
   margin: 0;
   font-size: 1rem;
 }
-nav ul li:hover {
-  background-color: #38b649;
-}
-nav ul li.selected {
-  background-color: #0b3173;
-}
-nav ul li.selected a {
-  cursor: default;
-}
 
-main {
+.summary {
   display: flex;
   justify-content: center;
   padding: 80px 24px 160px;
 }
 @media only screen and (max-width: 992px) {
-  main {
+  .summary {
     padding-bottom: 240px;
   }
 }
 @media only screen and (max-width: 768px) {
-  main {
+  .summary {
     padding: 180px 24px 240px;
   }
 }
-main.projects {
+.summary .summary__section {
+  display: flex;
   flex-direction: column;
+  width: 600px;
 }
-main h2 {
+.summary .summary__section .summary__heading {
   margin: 0;
   text-align: center;
   font-size: 2.5rem;
 }
-main h3 {
-  text-align: center;
-  font-size: 1.2rem;
+.summary .summary__section .summary__para {
+  text-align: justify;
 }
-main img {
+.summary .summary__section .summary__para--link-container {
+  margin: 12px 0;
+  text-align: center;
+}
+.summary .summary__section .summary__para a {
+  text-decoration: none;
+  color: #014421;
+  transition: color 0.5s;
+}
+.summary .summary__section .summary__para a:hover {
+  color: #38b649;
+}
+.summary .summary__image {
   margin-left: 48px;
   height: 400px;
   border: 10px solid #0b3173;
 }
 @media only screen and (max-width: 1200px) {
-  main img {
+  .summary .summary__image {
     height: 300px;
   }
 }
 @media only screen and (max-width: 992px) {
-  main img.decorative {
+  .summary .summary__image {
     display: none;
   }
 }
-main a {
-  text-decoration: none;
-  color: #014421;
-  transition: color 0.5s;
+
+.footer {
+  background-color: #014421;
+  width: 100%;
+  color: #eaebed;
+  text-align: center;
+  padding: 24px 0;
+  position: fixed;
+  bottom: 0;
+  text-shadow: 1px 1px 2px #000;
 }
-main a:hover {
-  color: #32cd32;
+.footer .footer__heading {
+  margin: 0;
+  padding: 0 0 16px;
+  font-size: 1.2rem;
 }
-main section {
+.footer .footer__details {
   display: flex;
+  justify-content: center;
+  margin: 0;
+}
+@media only screen and (max-width: 992px) {
+  .footer .footer__details {
+    flex-direction: column;
+  }
+}
+.footer .footer__details .footer__detail {
+  font-size: 1rem;
+  margin: 0 20px;
+}
+@media only screen and (max-width: 992px) {
+  .footer .footer__details .footer__detail {
+    margin: 8px 0;
+  }
+}
+.footer .footer__details .footer__detail .footer__link {
+  color: #eaebed;
+}
+.footer .footer__details .footer__detail .footer__link:hover {
+  color: #38b649;
+}
+
+@-moz-document url-prefix() {
+  html {
+    font-size: 18px;
+  }
+}
+body {
+  color: #0b3173;
+  font-family: "Cormorant Garamond";
+  margin: 0;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  padding: 80px 24px 160px;
   flex-direction: column;
 }
-main section h3 {
+@media only screen and (max-width: 992px) {
+  .projects {
+    padding-bottom: 240px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projects {
+    padding: 180px 24px 240px;
+  }
+}
+.projects .projects__heading {
+  margin: 0 0 24px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-main section img {
-  border: 10px solid #0b3173;
-}
-main section p.link {
-  margin: 12px 0;
-  text-align: center;
-}
-main div {
-  text-align: justify;
-}
-main div.info {
-  width: 600px;
-}
-main div.info p.resume {
-  text-align: center;
-}
-main div.grid {
+.projects .projects__gallery {
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
 }
 @media only screen and (max-width: 992px) {
-  main div.grid {
+  .projects .projects__gallery {
     display: flex;
     flex-direction: column;
   }
 }
-main div.grid section {
+.projects .projects__gallery .projects__project {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 12px 60px;
 }
 @media only screen and (max-width: 768px) {
-  main div.grid section {
+  .projects .projects__gallery .projects__project {
     padding: 0;
   }
 }
-main div.grid section a {
+.projects .projects__gallery .projects__project .project__heading {
+  margin: 0 0 24px;
+  font-size: 2rem;
+}
+.projects .projects__gallery .projects__project .project__image-container {
   display: flex;
   justify-content: center;
 }
-main div.grid section a img {
+.projects .projects__gallery .projects__project .project__image-container .project__image {
   height: 300px;
   margin: 0;
   border: none;
 }
 @media only screen and (max-width: 1200px) {
-  main div.grid section a img {
+  .projects .projects__gallery .projects__project .project__image-container .project__image {
     height: 240px;
   }
 }
 @media only screen and (max-width: 992px) {
-  main div.grid section a img {
+  .projects .projects__gallery .projects__project .project__image-container .project__image {
     width: 100%;
     height: unset;
   }
 }
-
-footer {
-  background-color: #014421;
-  width: 100%;
-  color: white;
+.projects .projects__gallery .projects__project .project__para {
+  text-align: justify;
+}
+.projects .projects__gallery .projects__project .project__para--link-container {
+  margin: 12px 0;
   text-align: center;
-  padding: 24px 0;
-  position: fixed;
-  bottom: 0;
-  text-shadow: 1px 1px 2px black;
 }
-footer h2 {
-  margin: 0;
-  padding: 0 0 16px;
-  font-size: 1.2rem;
+.projects .projects__gallery .projects__project .project__para a {
+  text-decoration: none;
+  color: #014421;
+  transition: color 0.5s;
 }
-footer p {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-@media only screen and (max-width: 992px) {
-  footer p {
-    flex-direction: column;
-  }
-}
-footer p span {
-  font-size: 0.8rem;
-  margin: 0 20px;
-}
-@media only screen and (max-width: 992px) {
-  footer p span {
-    margin: 8px 0;
-  }
-}
-footer p span a {
-  color: white;
+.projects .projects__gallery .projects__project .project__para a:hover {
+  color: #38b649;
 }
