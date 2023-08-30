@@ -1,8 +1,9 @@
 @use "../partials/pallette";
-@use "../partials/mixins";
+@use "../partials/breakpoints";
+@use "../partials/shared-styles";
 
 .summary {
-  @include mixins.main-styles;
+  @include shared-styles.main-styles;
 
   .summary__section {
     display: flex;
@@ -16,7 +17,7 @@
     }
 
     .summary__para {
-      @include mixins.para-styles;
+      @include shared-styles.para-styles;
     }
   }
 
@@ -25,11 +26,11 @@
     height: 400px;
     border: 10px solid pallette.$secondary-color;
 
-    @media only screen and (max-width: 1200px) {
+    @include breakpoints.small-desktop {
       height: 300px;
     }
 
-    @media only screen and (max-width: 992px) {
+    @include breakpoints.tablet {
       display: none;
     }
   }

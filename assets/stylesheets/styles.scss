@@ -4,8 +4,6 @@
 @use "./modules/projects";
 @use "./modules/footer";
 
-// mixins for screen sizes
-
 @-moz-document url-prefix() {
   html {
     font-size: 18px;
