@@ -114,12 +114,14 @@
   margin: 12px 0 0;
   text-align: center;
 }
-.summary .summary__container .summary__section .summary__para a {
+.summary .summary__container .summary__section .summary__para .summary__link,
+.summary .summary__container .summary__section .summary__para .project__link {
   text-decoration: none;
   color: #014421;
   transition: color 0.5s;
 }
-.summary .summary__container .summary__section .summary__para a:hover {
+.summary .summary__container .summary__section .summary__para .summary__link:hover,
+.summary .summary__container .summary__section .summary__para .project__link:hover {
   color: #38b649;
 }
 .summary .summary__container .summary__section .summary__list {
@@ -169,6 +171,7 @@
   margin: 0 0 24px;
   text-align: center;
   font-size: 2.5rem;
+  line-height: 1;
 }
 .projects .projects__gallery {
   display: grid;
@@ -223,12 +226,14 @@
   margin: 12px 0 0;
   text-align: center;
 }
-.projects .projects__gallery .projects__project .project__para a {
+.projects .projects__gallery .projects__project .project__para .summary__link,
+.projects .projects__gallery .projects__project .project__para .project__link {
   text-decoration: none;
   color: #014421;
   transition: color 0.5s;
 }
-.projects .projects__gallery .projects__project .project__para a:hover {
+.projects .projects__gallery .projects__project .project__para .summary__link:hover,
+.projects .projects__gallery .projects__project .project__para .project__link:hover {
   color: #38b649;
 }
 
