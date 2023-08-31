@@ -14,10 +14,7 @@
       padding: 0 0 32px;
 
       .summary__heading {
-        margin: 0 0 16px;
-        text-align: center;
-        font-size: 2.5rem;
-        line-height: 1;
+        @include shared-styles.heading-styles;
       }
 
       .summary__para {
