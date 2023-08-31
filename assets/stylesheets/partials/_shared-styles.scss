@@ -16,6 +16,7 @@
 }
 
 @mixin para-styles {
+  margin: 8px 0;
   text-align: justify;
 
   &--link-container {
