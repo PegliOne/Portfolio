@@ -17,11 +17,12 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    margin: 0;
-    color: pallette.$tertiary-color;
     height: 48px;
+    margin: 0;
     padding-left: 32px;
+    color: pallette.$tertiary-color;
     font-size: 1.4rem;
+    text-align: center;
     text-shadow: 1px 1px 2px black;
 
     @include breakpoints.phone {
@@ -31,6 +32,7 @@
 
   .navbar__buttons {
     display: flex;
+    justify-content: flex-end;
     list-style-type: none;
     flex-grow: 1;
     margin: 0;
@@ -42,8 +44,16 @@
     }
 
     .navbar__button {
-      flex-grow: 1;
+      width: 200px;
       transition: background-color 0.5s;
+
+      @include breakpoints.tablet {
+        width: 136px;
+      }
+
+      @include breakpoints.phone {
+        width: 100%;
+      }
 
       &--selected {
         background-color: pallette.$secondary-color;
