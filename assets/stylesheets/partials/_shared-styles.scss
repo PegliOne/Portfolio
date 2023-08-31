@@ -4,14 +4,14 @@
 @mixin main-styles {
   display: flex;
   justify-content: center;
-  padding: 80px 24px 160px;
+  padding: 88px 24px 160px;
 
   @include breakpoints.tablet {
     padding-bottom: 240px;
   }
 
   @include breakpoints.phone {
-    padding: 180px 24px 240px;
+    padding: 208px 24px 240px;
   }
 }
 
@@ -20,7 +20,7 @@
   text-align: justify;
 
   &--link-container {
-    margin: 12px 0;
+    margin: 12px 0 0;
     text-align: center;
   }
 

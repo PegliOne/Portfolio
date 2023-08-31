@@ -32,7 +32,6 @@
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-  flex-grow: 1;
   margin: 0;
 }
 @media only screen and (max-width: 768px) {
@@ -48,7 +47,7 @@
 }
 @media only screen and (max-width: 992px) {
   .navbar .navbar__buttons .navbar__button {
-    width: 136px;
+    width: 132px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -81,7 +80,7 @@
 .summary {
   display: flex;
   justify-content: center;
-  padding: 80px 24px 160px;
+  padding: 88px 24px 160px;
 }
 @media only screen and (max-width: 992px) {
   .summary {
@@ -90,34 +89,49 @@
 }
 @media only screen and (max-width: 768px) {
   .summary {
-    padding: 180px 24px 240px;
+    padding: 208px 24px 240px;
   }
 }
-.summary .summary__section {
+.summary .summary__container {
   display: flex;
   flex-direction: column;
   width: 600px;
 }
-.summary .summary__section .summary__heading {
-  margin: 0 0 12px;
+.summary .summary__container .summary__section {
+  padding: 0 0 32px;
+}
+.summary .summary__container .summary__section .summary__heading {
+  margin: 0 0 16px;
   text-align: center;
   font-size: 2.5rem;
+  line-height: 1;
 }
-.summary .summary__section .summary__para {
+.summary .summary__container .summary__section .summary__para {
   margin: 8px 0;
   text-align: justify;
 }
-.summary .summary__section .summary__para--link-container {
-  margin: 12px 0;
+.summary .summary__container .summary__section .summary__para--link-container {
+  margin: 12px 0 0;
   text-align: center;
 }
-.summary .summary__section .summary__para a {
+.summary .summary__container .summary__section .summary__para a {
   text-decoration: none;
   color: #014421;
   transition: color 0.5s;
 }
-.summary .summary__section .summary__para a:hover {
+.summary .summary__container .summary__section .summary__para a:hover {
   color: #38b649;
+}
+.summary .summary__container .summary__section .summary__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.summary .summary__container .summary__section .summary__list .summary__item {
+  padding: 4px 8px;
 }
 .summary .summary__image {
   margin-left: 36px;
@@ -126,7 +140,7 @@
 }
 @media only screen and (max-width: 1200px) {
   .summary .summary__image {
-    height: 300px;
+    height: 280px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -138,7 +152,7 @@
 .projects {
   display: flex;
   justify-content: center;
-  padding: 80px 24px 160px;
+  padding: 88px 24px 160px;
   flex-direction: column;
 }
 @media only screen and (max-width: 992px) {
@@ -148,7 +162,7 @@
 }
 @media only screen and (max-width: 768px) {
   .projects {
-    padding: 180px 24px 240px;
+    padding: 208px 24px 240px;
   }
 }
 .projects .projects__heading {
@@ -206,7 +220,7 @@
   text-align: justify;
 }
 .projects .projects__gallery .projects__project .project__para--link-container {
-  margin: 12px 0;
+  margin: 12px 0 0;
   text-align: center;
 }
 .projects .projects__gallery .projects__project .project__para a {
