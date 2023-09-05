@@ -8,7 +8,7 @@
   position: fixed;
   bottom: 0;
   color: pallette.$tertiary-color;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: center;
   text-shadow: 1px 1px 2px pallette.$shadow-color;
 
@@ -29,11 +29,20 @@
     }
 
     .footer__detail {
-      font-size: 1rem;
       margin: 0 20px;
+      font-size: 1rem;
 
       @include breakpoints.tablet {
         margin: 8px 0;
+      }
+
+      .footer__icon {
+        font-size: 1.2rem;
+
+        &--rounded {
+          position: relative;
+          bottom: 1px;
+        }
       }
 
       .footer__link {

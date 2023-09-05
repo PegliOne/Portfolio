@@ -272,13 +272,20 @@
   }
 }
 .footer .footer__details .footer__detail {
-  font-size: 1rem;
   margin: 0 20px;
+  font-size: 1rem;
 }
 @media only screen and (max-width: 992px) {
   .footer .footer__details .footer__detail {
     margin: 8px 0;
   }
+}
+.footer .footer__details .footer__detail .footer__icon {
+  font-size: 1.2rem;
+}
+.footer .footer__details .footer__detail .footer__icon--rounded {
+  position: relative;
+  bottom: 1px;
 }
 .footer .footer__details .footer__detail .footer__link {
   color: #eaebed;
