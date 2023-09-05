@@ -37,7 +37,12 @@
       }
 
       .footer__icon {
-        font-size: 20px;
+        font-size: 1.2rem;
+
+        &--rounded {
+          position: relative;
+          bottom: 1px;
+        }
       }
 
       .footer__link {
