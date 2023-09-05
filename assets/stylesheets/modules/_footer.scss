@@ -4,17 +4,19 @@
 .footer {
   background-color: pallette.$primary-color;
   width: 100%;
-  color: pallette.$tertiary-color;
-  text-align: center;
   padding: 24px 0;
   position: fixed;
   bottom: 0;
+  color: pallette.$tertiary-color;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
   text-shadow: 1px 1px 2px pallette.$shadow-color;
 
   .footer__heading {
     margin: 0;
     padding: 0 0 16px;
     font-size: 1.4rem;
+    letter-spacing: 0.1rem;
   }
 
   .footer__details {

@@ -8,6 +8,8 @@
   position: fixed;
   top: 0;
   width: 100%;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
 
   @include breakpoints.phone {
     flex-direction: column;
@@ -17,13 +19,17 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    height: 48px;
     margin: 0;
     padding-left: 32px;
+    flex-wrap: nowrap;
     color: pallette.$tertiary-color;
     font-size: 1.4rem;
     text-align: center;
     text-shadow: 1px 1px 2px black;
+
+    @include breakpoints.tablet {
+      font-size: 1.2rem;
+    }
 
     @include breakpoints.phone {
       padding: 12px 0;
@@ -71,7 +77,7 @@
         justify-content: center;
         align-items: center;
         color: pallette.$tertiary-color;
-        font-weight: 800;
+        font-weight: 700;
         text-decoration: none;
         text-shadow: 1px 1px 2px black;
         height: 48px;

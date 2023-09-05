@@ -5,6 +5,8 @@
   position: fixed;
   top: 0;
   width: 100%;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.1rem;
 }
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -15,13 +17,18 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
-  height: 48px;
   margin: 0;
   padding-left: 32px;
+  flex-wrap: nowrap;
   color: #eaebed;
   font-size: 1.4rem;
   text-align: center;
   text-shadow: 1px 1px 2px black;
+}
+@media only screen and (max-width: 992px) {
+  .navbar .navbar__heading {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .navbar .navbar__heading {
@@ -69,7 +76,7 @@
   justify-content: center;
   align-items: center;
   color: #eaebed;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
   text-shadow: 1px 1px 2px black;
   height: 48px;
@@ -240,17 +247,19 @@
 .footer {
   background-color: #014421;
   width: 100%;
-  color: #eaebed;
-  text-align: center;
   padding: 24px 0;
   position: fixed;
   bottom: 0;
+  color: #eaebed;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
   text-shadow: 1px 1px 2px #000;
 }
 .footer .footer__heading {
   margin: 0;
   padding: 0 0 16px;
   font-size: 1.4rem;
+  letter-spacing: 0.1rem;
 }
 .footer .footer__details {
   display: flex;
