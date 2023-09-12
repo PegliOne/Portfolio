@@ -14,7 +14,7 @@ Currently the projects page only includes the Tic-Tac-Toe project I made while c
 
 ## Technologies Used
 
-- HTML (including semantic elements and BEM clas naming conventions)
+- HTML (including semantic elements and BEM class naming conventions)
 - CSS (including using flexbox, CSS grid and media queries to achieve a responsive layout)
 - SCSS (including the use of variables, mixins and modules)
 - Git Version Control (including the use of branches to add new features)
