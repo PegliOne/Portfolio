@@ -2,6 +2,8 @@
 
 This is a portfolio website that I have built to showcase my work.
 
+Hosted Site: peglione.github.io/Portfolio/
+
 ## Features
 
 The portfolio consists of a landing page and a projects page.
