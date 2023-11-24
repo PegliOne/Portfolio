@@ -2,7 +2,7 @@
 
 This is a portfolio website that I have built to showcase my work.
 
-Hosted Site: [peglione.github.io/Portfolio/](https://peglione.github.io/Portfolio/)
+Hosted Site: [https://peglione.github.io/Portfolio/](https://peglione.github.io/Portfolio/)
 
 ## Features
 
