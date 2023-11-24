@@ -193,7 +193,7 @@
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .projects .projects__gallery {
     display: flex;
     flex-direction: column;
@@ -203,7 +203,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 60px;
+  padding: 12px;
+  margin-bottom: 48px;
 }
 @media only screen and (max-width: 768px) {
   .projects .projects__gallery .projects__project {
@@ -213,30 +214,28 @@
 .projects .projects__gallery .projects__project .project__heading {
   margin: 0 0 24px;
   font-size: 2rem;
+  text-align: center;
 }
 .projects .projects__gallery .projects__project .project__image-container {
   display: flex;
   justify-content: center;
 }
 .projects .projects__gallery .projects__project .project__image-container .project__image {
-  height: 300px;
+  height: 272px;
   margin: 0;
   border: none;
 }
 @media only screen and (max-width: 1200px) {
   .projects .projects__gallery .projects__project .project__image-container .project__image {
-    height: 240px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .projects .projects__gallery .projects__project .project__image-container .project__image {
     width: 100%;
-    height: unset;
+    height: 400px;
   }
 }
 .projects .projects__gallery .projects__project .project__para {
   margin: 8px 0;
   text-align: justify;
+  width: 540px;
+  padding-top: 8px;
 }
 .projects .projects__gallery .projects__project .project__para--link-container {
   margin: 12px 0 0;
@@ -251,6 +250,17 @@
 .projects .projects__gallery .projects__project .project__para .summary__link:hover,
 .projects .projects__gallery .projects__project .project__para .project__link:hover {
   color: #38b649;
+}
+@media only screen and (max-width: 1200px) {
+  .projects .projects__gallery .projects__project .project__para {
+    width: 800px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .projects .projects__gallery .projects__project .project__para {
+    width: 100%;
+  }
 }
 
 .footer {
