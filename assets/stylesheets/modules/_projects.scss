@@ -4,6 +4,19 @@
 .projects {
   @include shared-styles.main-styles;
   flex-direction: column;
+  margin: 380px 0 400px;
+
+  @include breakpoints.small-desktop {
+    margin: 1160px 0 1180px;
+  }
+
+  @include breakpoints.tablet {
+    margin: 1140px 0 1260px;
+  }
+
+  @include breakpoints.phone {
+    margin: 180px 0 220px;
+  }
 
   .projects__heading {
     @include shared-styles.heading-styles(24px);
@@ -22,11 +35,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 12px;
-      margin-bottom: 48px;
+      padding: 24px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 24px;
 
-      @include breakpoints.phone {
-        padding: 0;
+      @include breakpoints.medium-desktop {
+        margin-left: 0;
+        margin-right: 0;
       }
 
       .project__heading {
@@ -55,6 +71,7 @@
         @include shared-styles.para-styles;
         width: 540px;
         padding-top: 8px;
+        font-size: 1.4rem;
 
         @include breakpoints.small-desktop {
           width: 800px;
@@ -63,6 +80,17 @@
 
         @include breakpoints.tablet {
           width: 100%;
+        }
+
+        @include breakpoints.phone {
+          padding: 0;
+          font-size: 1.2rem;
+        }
+
+        &--link-container {
+          @include breakpoints.phone {
+            font-size: 1.2rem;
+          }
         }
       }
     }

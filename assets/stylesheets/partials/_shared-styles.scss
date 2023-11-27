@@ -4,14 +4,11 @@
 @mixin main-styles {
   display: flex;
   justify-content: center;
-  padding: 88px 24px 160px;
-
-  @include breakpoints.tablet {
-    padding-bottom: 240px;
-  }
+  align-items: center;
+  height: 100vh;
 
   @include breakpoints.phone {
-    padding: 208px 24px 240px;
+    height: unset;
   }
 }
 
@@ -20,11 +17,23 @@
   text-align: center;
   font-size: 2.5rem;
   line-height: 1;
+
+  @include breakpoints.small-desktop {
+    font-size: 2.3rem;
+  }
 }
 
 @mixin para-styles {
-  margin: 8px 0;
+  margin: 28px 0;
   text-align: justify;
+
+  @include breakpoints.small-desktop {
+    margin: 16px 0;
+  }
+
+  @include breakpoints.phone {
+    margin: 16px 0;
+  }
 
   &--link-container {
     margin: 12px 0 0;

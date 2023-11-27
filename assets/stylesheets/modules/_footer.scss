@@ -15,8 +15,16 @@
   .footer__heading {
     margin: 0;
     padding: 0 0 16px;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     letter-spacing: 0.1rem;
+
+    @include breakpoints.medium-desktop {
+      font-size: 1.5rem;
+    }
+
+    @include breakpoints.small-desktop {
+      font-size: 1.4rem;
+    }
   }
 
   .footer__details {
@@ -30,7 +38,11 @@
 
     .footer__detail {
       margin: 0 20px;
-      font-size: 1rem;
+      font-size: 1.2rem;
+
+      @include breakpoints.small-desktop {
+        font-size: 1rem;
+      }
 
       @include breakpoints.tablet {
         margin: 8px 0;

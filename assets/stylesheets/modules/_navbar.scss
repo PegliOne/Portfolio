@@ -19,13 +19,21 @@
     display: flex;
     align-items: center;
     flex-grow: 1;
-    margin: 0;
-    padding-left: 32px;
     flex-wrap: nowrap;
+    margin: 0;
+    padding: 8px 0 8px 36px;
     color: pallette.$tertiary-color;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-align: center;
     text-shadow: 1px 1px 2px black;
+
+    @include breakpoints.medium-desktop {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoints.small-desktop {
+      font-size: 1.4rem;
+    }
 
     @include breakpoints.tablet {
       font-size: 1.2rem;
@@ -80,9 +88,19 @@
         font-weight: 700;
         text-decoration: none;
         text-shadow: 1px 1px 2px black;
-        height: 48px;
+        height: 70px;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
+
+        @include breakpoints.medium-desktop {
+          height: 54px;
+          font-size: 1.1rem;
+        }
+
+        @include breakpoints.small-desktop {
+          height: 48px;
+          font-size: 1rem;
+        }
       }
     }
   }
