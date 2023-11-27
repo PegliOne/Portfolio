@@ -4,18 +4,22 @@
 .projects {
   @include shared-styles.main-styles;
   flex-direction: column;
-  margin: 380px 0 400px;
+  margin: 420px 0;
+
+  @include breakpoints.medium-desktop {
+    margin: 500px 0 520px;
+  }
 
   @include breakpoints.small-desktop {
     margin: 1160px 0 1180px;
   }
 
   @include breakpoints.tablet {
-    margin: 1140px 0 1260px;
+    margin: 1120px 0 1240px;
   }
 
   @include breakpoints.phone {
-    margin: 180px 0 220px;
+    margin: 180px 0 200px;
   }
 
   .projects__heading {
@@ -36,9 +40,7 @@
       flex-direction: column;
       align-items: center;
       padding: 24px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin-bottom: 24px;
+      margin: 0 40px 24px;
 
       @include breakpoints.medium-desktop {
         margin-left: 0;
@@ -56,11 +58,11 @@
         justify-content: center;
 
         .project__image {
-          height: 272px;
+          height: 300px;
           margin: 0;
           border: none;
 
-          @include breakpoints.small-desktop {
+          @include breakpoints.medium-desktop {
             width: 100%;
             height: 400px;
           }
