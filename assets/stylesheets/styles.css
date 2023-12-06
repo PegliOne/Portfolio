@@ -211,12 +211,26 @@
   .summary .summary__container .summary__section .summary__list .summary__item .summary__icon {
     width: 15px;
     height: 15px;
-    padding-right: 4px;
   }
+}
+.summary .summary__container .summary__section .summary__list .summary__item .summary__icon--thin {
+  padding-right: 4px;
+}
+.summary .summary__container .summary__section .summary__list .summary__item .summary__icon--thick {
+  padding-right: 10px;
 }
 .summary .summary__container .summary__section .summary__list .summary__item .summary__icon--svg {
   position: relative;
   top: 3px;
+  padding-right: 2px;
+}
+.summary .summary__container .summary__section .summary__list .summary__item .summary__icon--svg.summary__icon--thick {
+  padding-right: 4px;
+}
+@media only screen and (max-width: 1400px) {
+  .summary .summary__container .summary__section .summary__list .summary__item .summary__icon--svg.summary__icon--thick {
+    padding-right: 2px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .summary .summary__container .summary__section .summary__list .summary__item .summary__icon--svg {

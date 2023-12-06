@@ -64,12 +64,28 @@
             @include breakpoints.medium-desktop {
               width: 15px;
               height: 15px;
+            }
+
+            &--thin {
               padding-right: 4px;
+            }
+
+            &--thick {
+              padding-right: 10px;
             }
 
             &--svg {
               position: relative;
               top: 3px;
+              padding-right: 2px;
+
+              &.summary__icon--thick {
+                padding-right: 4px;
+
+                @include breakpoints.medium-desktop {
+                  padding-right: 2px;
+                }
+              }
 
               @include breakpoints.medium-desktop {
                 top: 1px;
