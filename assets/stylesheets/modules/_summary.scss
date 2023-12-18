@@ -8,7 +8,7 @@
   .summary__container {
     display: flex;
     flex-direction: column;
-    margin: 0 40px 80px;
+    margin: 0 40px;
     font-size: 1.5rem;
 
     @include breakpoints.medium-desktop {
@@ -18,14 +18,6 @@
 
     @include breakpoints.small-desktop {
       font-size: 1.2rem;
-    }
-
-    @include breakpoints.tablet {
-      margin-bottom: 180px;
-    }
-
-    @include breakpoints.phone {
-      margin: 180px 20px 260px;
     }
 
     .summary__section {

@@ -8,11 +8,21 @@
   position: fixed;
   top: 0;
   width: 100%;
+  height: 70px;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.1rem;
 
+  @include breakpoints.medium-desktop {
+    height: 54px;
+  }
+
+  @include breakpoints.small-desktop {
+    height: 48px;
+  }
+
   @include breakpoints.phone {
     flex-direction: column;
+    height: unset;
   }
 
   .navbar__heading {
@@ -32,11 +42,11 @@
     }
 
     @include breakpoints.small-desktop {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     @include breakpoints.tablet {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     @include breakpoints.phone {

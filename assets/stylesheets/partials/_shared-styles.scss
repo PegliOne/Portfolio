@@ -5,10 +5,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin: 100px 0 160px;
+
+  @include breakpoints.medium-desktop {
+    margin: 84px 0 160px;
+  }
+
+  @include breakpoints.small-desktop {
+    margin: 84px 0 160px;
+  }
+
+  @include breakpoints.tablet {
+    margin: 84px 0 260px;
+  }
 
   @include breakpoints.phone {
-    height: unset;
+    margin: 180px 0 248px;
   }
 }
 
